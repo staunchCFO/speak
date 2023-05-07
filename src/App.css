@@ -1,38 +1,495 @@
-.App {
-  text-align: center;
+
+.main_container {
+  display: flex;
+  height: 880px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_container > .left {
+  width: 40%;
+  height: 100%;
+  padding-left: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main_container > .left > .left_content {
+  padding-top: 180px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main_container > .left .left_content > h1 {
+  font-family: 'Clash Display';
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 79px;
+  letter-spacing: -0.011em;
+  text-align: left;
+  color: #35494B;
+}
+
+.main_container > .left .left_content > p {
+  font-family: 'Source Sans Pro';
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: -0.011em;
+  text-align: left;
+  color: #35494B;
+  width: 70%;
+}
+.main_container > .left .left_content > .join_btn {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #35494B;
+  background-color: #40B8C2;
+  color: #ffffff;
+}
+
+.main_container > .left .left_content > .store_btn {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  margin-top: 30px;
+
+  display: flex; 
+}
+
+.main_container > .left .left_content > .store_btn > .play_btn {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #35494B;
+  background-color: inherit;
+  color: #35494B;
+  margin-right: 20px;
+}
+
+.store_btn > .play_btn {
+  display: flex;
+  align-items: center;
+}
+
+.store_btn > .app_btn {
+  display: flex;
+  align-items: center;
+}
+
+.main_container > .left .left_content > .store_btn > .play_btn > img {
+  height: 18px;
+  width: 15px;
+  padding-right: 10px;
+}
+
+.main_container > .left .left_content > .store_btn > .app_btn {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #35494B;
+  background-color: inherit;
+  color: #35494B;
+  margin-right: 20px;
+}
+
+.main_container > .left .left_content > .store_btn > .app_btn > img {
+  height: 18px;
+  width: 15px;
+  padding-right: 10px;
+}
+
+.main_container > .right {
+  position: relative;
+  
+}
+
+.main_container > .right > .circle {
+  position: absolute;
+  
+  height: 1300.390625px;
+  width: 1300.390625px;
+  left: -90.8984375px;
+  top: -155.62890625px;
+
+  background-color: #FFF3F0;
+  border-radius: 50%;
+  padding-right: 80px;
+}
+
+
+.feature_section {
+  height: 880px;
+  padding: 100px 80px 0px 80px;
+}
+
+.feature_section > span {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+
+  color: #40B8C2
+}
+
+.feature_section > h2 {
+  font-family: 'Clash Display';
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 49px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  color: #0D2527;
+  margin-top: 20px;
+}
+
+.feature_section > .feature_container {
+  display: flex;
+}
+
+.feature_section > .feature_container > .left {
+  width: 60%;
+  height: 100%;
+  margin-top: 70px;
+  padding-left: 20px;
+  border-left: 3px solid #F2F4F7;
+}
+
+.feature_section > .feature_container > .left > .left_first > h3 {
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 50%;
+  color: #35494B;
+}
+
+.feature_section > .feature_container > .left > .left_first > p {
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 60%;
+  color: #35494B
+}
+
+.feature_section > .feature_container > .left > .left_first > span {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #40B8C2;
+  cursor: pointer;
+}
+
+.feature_section > .feature_container > .left > .left_second > h3 {
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 50%;
+  color: #35494B;
+  margin-top: 30px
+}
+
+.feature_section > .feature_container > .left > .left_second > p {
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 60%;
+  color: #35494B
+}
+
+.feature_section > .feature_container > .left > .left_second > span {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #40B8C2;
+  cursor: pointer;
+}
+
+.feature_section > .feature_container > .left > .left_third > h3 {
+  font-family: 'Clash Display';
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 50%;
+  color: #35494B;
+  margin-top: 30px
+}
+
+.feature_section > .feature_container > .left > .left_third > p {
+  font-family: 'Source Sans Pro';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 60%;
+  color: #35494B
+}
+
+.feature_section > .feature_container > .left > .left_third > span {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #40B8C2;
+  cursor: pointer;
+}
+
+.feature_section > .feature_container > .right {
+  width: 40%;
+  height: 100%;
+  padding-top: 70px;
+  padding-right: 80px;
+
+  /* background-color: yellow; */
+}
+
+.testimonial {
+  height: 600px;
+}
+
+.testimonial > h1 {
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.83px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+
+  padding-top: 70px;
+}
+
+.testimonial > .testimonial_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+
+.testimonial > .testimonial_content > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px 24px;
+  gap: 16px;
+  width: 416.52px;
+  height: 328px;
+  background: #F7FCFD;
+  border-radius: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.testimonial > .testimonial_content > .left > img {
+  width: 100px;
+  height: 100px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.testimonial > .testimonial_content > .left > span {
+  width: 343px;
+  height: 123px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  text-align: center;
+  color: #35494B;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
+
+.testimonial > .testimonial_content > .left > h5 {
+  width: 368.52px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #0D2527;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .middle > img {
+  width: 100px;
+  height: 100px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .middle > span {
+  width: 343px;
+  height: 123px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  text-align: center;
+  color: #35494B;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .middle > h5 {
+  width: 368.52px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #0D2527;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .right > img {
+  width: 100px;
+  height: 100px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .right > span {
+  width: 343px;
+  height: 123px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  text-align: center;
+  color: #35494B;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.testimonial > .testimonial_content > .right > h5 {
+  width: 368.52px;
+
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: center;
+  color: #0D2527;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.download {
+  height: 500px;
+  padding: 0px 80px;
+}
+
+.download > .download_content {
+  height: 500px;
+  background: #F9774E;
+  border-radius: 80px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.download > .download_content > .left {
+  padding-left: 60px;
+  padding-top: 150px;
+}
+
+.download > .download_content > .left > h1 {
+  height: 79px;
+  font-family: 'Clash Display';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 61.04px;
+  line-height: 130%;
+  letter-spacing: -0.011em;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.download > .download_content > .left > p {
+  width: 40%;
+  height: 76px;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: -0.011em;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.download > .download_content > .left > .btns {
+  display: flex;
+}
+
+.download > .download_content > .left > .btns > button {
+  font-family: 'Source Sans Pro';
+  font-weight: bold;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
+  background-color: inherit;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.download > .download_content > .left > .btns > button > img {
+  height: 18px;
+  width: 15px;
+  padding-right: 10px;
+}
+
