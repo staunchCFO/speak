@@ -1,0 +1,64 @@
+.container > h1 {
+    height: 49px;
+    font-family: 'Clash Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 100%;
+    color: #0D2527;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.container > .dropdown_container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 200px;
+    background: linear-gradient(0deg, #E4F9FD, #E4F9FD), #FFFFFF;
+    border-radius: 40px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.container > .dropdown_container > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container > .dropdown_container > div > h2 {
+    padding-top: 10px;
+    height: 39px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30.06px;
+    line-height: 100%;
+    color: black;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.container > .dropdown_container > div > .icon {
+    cursor: pointer;
+    color: #0D2527;
+}
+
+.container > .dropdown_container > p {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150%;
+    color: #35494B;
+    flex: none;
+    order: 1;
+}

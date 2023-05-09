@@ -32,6 +32,11 @@
     color: #35494B;
 }
 
+.nav_links > ul > li > a:hover {
+    text-decoration: none;
+    color: rgb(213, 213, 68);
+}
+
 .nav_btns > button {
     font-family: 'Source Sans Pro';
     font-weight: bold;
@@ -49,4 +54,12 @@
 .nav_btn-join {
     background-color: #40B8C2;
     color: #ffffff;
+    border: 1px solid #35494B;
+}
+
+.nav_btn-join:hover {
+    border-radius: 10px;
+    border: 1px solid #35494B;
+    background-color: #9fdbe0;
+    color: #35494B;
 }

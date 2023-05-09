@@ -14,7 +14,7 @@
   padding-top: 180px;
 }
 
-.main_container > .left .left_content > h1 {
+.main_container > .left .left_content > marquee {
   font-family: 'Clash Display';
   font-size: 61px;
   font-weight: 700;
@@ -42,6 +42,13 @@
   border: 1px solid #35494B;
   background-color: #40B8C2;
   color: #ffffff;
+}
+
+.main_container > .left .left_content > .join_btn:hover {
+  border-radius: 10px;
+  border: 1px solid #35494B;
+  background-color: #9fdbe0;
+  color: #35494B;
 }
 
 .main_container > .left .left_content > .store_btn {
@@ -101,6 +108,14 @@
 .main_container > .right {
   position: relative;
   
+}
+
+
+.main_container > .right > img {
+  position: absolute;
+  height: 800px;
+  left: -270px;
+  top: 0px
 }
 
 .main_container > .right > .circle {
@@ -432,9 +447,10 @@
   height: 500px;
   background: #F9774E;
   border-radius: 80px;
-  flex: none;
+  /* flex: none;
   order: 1;
-  flex-grow: 0;
+  flex-grow: 0; */
+  display: flex;
 }
 
 .download > .download_content > .left {
@@ -457,7 +473,7 @@
 }
 
 .download > .download_content > .left > p {
-  width: 40%;
+  width: 70%;
   height: 76px;
   font-family: 'Source Sans Pro';
   font-style: normal;
@@ -473,6 +489,7 @@
 
 .download > .download_content > .left > .btns {
   display: flex;
+  padding-top: 00px;
 }
 
 .download > .download_content > .left > .btns > button {
@@ -491,5 +508,9 @@
   height: 18px;
   width: 15px;
   padding-right: 10px;
+}
+
+.download > .download_content > .right {
+  padding-top: 139px;
 }
 

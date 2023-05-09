@@ -1,10 +1,15 @@
 import {
-  Navbar
+  Navbar,
+  Dropdown,
+  Footer
 } from './components';
 
+import HOME_APP from './assets/images/mask.png';
+import GIF_IMG from './assets/images/ezgif.com-gif-maker.gif'
 import APP_ICON from './assets/images/Vector.png';
+import WHIE_APPLE_ICON from './assets/images/white_apple.png';
 import PLAY_ICON from './assets/images/Google Play logo.png';
-import FRAME1269 from './assets/images/Frame 1269 1.png';
+import FRAME1269 from './assets/images/orange_img.png';
 import FIRST_USER from './assets/images/Ellipse 180.png';
 import SECOND_USER from './assets/images/Ellipse 180-3.png';
 import THIRD_USER from './assets/images/Ellipse 180-2.png';
@@ -19,7 +24,8 @@ function App() {
       <div className='main_container'>
         <div className='left'>
           <div className='left_content'>
-            <h1>Say goodbye to stuttering</h1>
+            <marquee>Say goodbye to stuttering</marquee>
+            {/* <h1>Say goodbye to stuttering</h1> */}
             <p>
               We strive to provide you with the tools and
               resources you need to overcome your stutter
@@ -47,6 +53,10 @@ function App() {
         </div>
         <div className='right'>
           {/* <div className='circle' /> */}
+          <img 
+            src={HOME_APP}
+            alt='img'
+          />
         </div>
       </div>
 
@@ -74,7 +84,7 @@ function App() {
           </div>
           <div className='right'>
             <img
-              src={FRAME1269}
+              src={GIF_IMG}
               alt='frame'
             />
           </div>
@@ -131,7 +141,7 @@ function App() {
             <div className='btns'>
               <button>
                 <img 
-                  src={APP_ICON}
+                  src={WHIE_APPLE_ICON}
                   alt='apple_icon'
                 />
                 Get on iPhone
@@ -146,10 +156,19 @@ function App() {
             </div>
           </div>
           <div className='right'>
-            <img />
+            <img 
+              src={FRAME1269}
+              alt='app_image'
+            />
           </div>
         </div>
       </div>
+
+      {/* Dropdown */}
+      <Dropdown />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
